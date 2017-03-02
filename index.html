@@ -62,7 +62,7 @@
         <div class="[ col-xs-12 col-md-6 col-lg-7 text-left ]">
         	<h3><p id="paragraphHeader">Bonjour! My name is Mitchell.</p></h3>
         	<!--<hr>-->
-            <p class="descriptionText">I live in San Diego and currently work as a freelance programmer. I spend most of my time studying as I am a senior majoring in Computer Science at UC San Diego. I am very much an enthusiast for cycling, cooking, playing guitar, and family. Detailed below you will find some of my work and experiences.</p>
+            <p class="descriptionText">I live in San Diego and currently work as a freelance programmer. I spend most of my time studying as I am a senior majoring in Computer Science at UC San Diego. I am very much an enthusiast for cycling, cooking, playing guitar, and family. Detailed below you will find some of my work and experiences. Please see below for some of my most recent projects.</p>
             <div class="centerBlock">
         		<img src="img/guitar.png" class="img-circle"> 	
         	</div>
@@ -70,12 +70,59 @@
     </div>
     <!-- BEGIN 2nd PART  -->   
     <hr id="hrPart">
-    
+    <div class = "[ row ] rowThree">
+      <h3><p id="paragraphHeader">CSE 165 3D User Interaction</p></h3>
+      <p class="descriptionText ucsdClass">UCSD Winter Quarter 2017, Senior Year</p>
+      <div class="[ col-xs-12 col-md-6 col-lg-6]">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gaSjbSP6Fpc" frameborder="0" allowfullscreen></iframe>    
+      </div>
+      <div class="[ col-xs-12 col-md-6 col-lg-6]">      
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Xzr29KgpzQM" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="[ col-xs-12 col-md-6 col-lg-6]">
+          <p class="longParagraph">In this project, the only permitted interaction devices are the Oculus Rift HMD and the two Touch controllers. Keyboard, mouse and other input devices cannot be used once the application runs. We were to enable physics so that the furniture sits on the floor and does not go through other furniture or walls. The primary task was to redesign the VR lab in room B210 - to write a 3D application which loads the 3D model of 
+          the lab and displays it at 1:1 scale.</p>
+          <p class = "longParagraph"> We covered the following techniques in lecture, and most of them are present in my project:
+          <ol>
+              <li class="longParagraph">Put the user in the lab and provide functionality to teleport from one location to another. To teleport, the user points 
+                with one of the Touch controllers to a new location on the floor, to which the camera then switches.</li>
+              <li class="longParagraph">Allow the spawning of the following items: desks, chairs, locker cabinets, storage cabinets, TVs on stands, and white boards 
+                for the walls. You are free to offer more object types than above.</li>
+              <li class="longParagraph">Implement an interaction technique to select any one of the items in the room (5 points) and move it to a new location. 
+                Allow rotations of the furniture objects. The white boards should be movable along the walls only and not fall to the ground.
+                All furniture must sit on the floor once placed.</li>
+              <li class="longParagraph">Create a method to select any number of objects to group them together (5 points), highlight the selected items, then allow
+                moving the group as a whole (5 points). This only makes sense between objects with the same degrees of movement freedom - i.e., 
+                white boards should only group with other items on the same wall.</li>
+              <li class="longParagraph">Create 'save' and 'load' functions to store the furniture configuration on disk and retrieve it at a later point. Group information does not need to get saved.</li>
+              <li class="longParagraph">Create a room design with 26 desks, at least 30 lockers and two storage cabinets, which makes more sense to you than the current layout.</li>
+          </ol>       
+      </div>
+      <div class="[ col-xs-12 col-md-6 col-lg-6]">
+          <p class="longParagraph">This project required the use of the Leapmotion sensor which we mounted onto the HMD of the Oculus Rift. We were no longer allowed
+            to use the touch controllers to allow for extra functionality. The primary task was to write a 3D program that read an input file with 3D coordinates that 
+            represented a race track. Once loaded, the following requirements were necessary: </p>    
+          <ol>
+              <li class="longParagraph">Flight Controls: Implement a way to fly continuously and can't instantaneously "teleport" anywhere at any time. When flying, 
+                the user needs to be able to look around without impacting the direction in which s/he is flying or speed. The flight controls I opted for were to "grip" with the
+                left hand to accelerate, and use the right palm to impact the rotation/pitch/roll of the player in flight. The distance at which the player held their hand from the 
+                HMD affected how fast they would travel along the right hands orientation as well. 
+              </li>
+              <li class="longParagraph">Wayfinding: Come up with at least 2 different ways of finding the next checkpoint. We implemented a compass arrow that always points to the
+                next checkpoint, along with thick lines drawn between each checkpoint to make obvious the track. 
+              </li>
+              <li class="longParagraph">Gameplay: The players aircraft should start at the first checkpoint, with zero pitch or roll. Use a countdown timer when starting the race, 
+                and when the player hits the floor/building and it should reset the position of the player to the last checkpoint reached. When the last checkpoint is reached
+                the race should end and a total time elapsed counter should be displayed to show the user how long it toom them to finish the track.
+              </li>
+          </ol>                   
+      </div>      
+    </div>
 
 
 
-
-     <div class="[ row ] rowThree">
+    <hr id="hrPart">
+    <div class="[ row ] rowThree">
         <div class="[ col-xs-12 col-md-6 col-lg-6]">
             <h3><p id="paragraphHeader">Jet Propulsion Laboratory (NASA)</p></h3>
             <!--<hr>-->
